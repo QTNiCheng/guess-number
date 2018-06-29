@@ -1,0 +1,7 @@
+{% extends "base.html" %} <!-- 引入基模板 -->
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+    <!-- 使用Flask-Bootstrap提供的函数来生成默认样式的表单 -->
+    {{ wtf.quick_form(form) }}
+{% endblock %}
